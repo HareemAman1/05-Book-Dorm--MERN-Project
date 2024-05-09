@@ -1,0 +1,35 @@
+/* ANALYTICS SECTION  */
+.section-analytics{
+    margin: 9.6rem 0;  /* to get equal space from top and bottom  */
+  
+    & .container{
+      background-color: white;
+      border: 4px dashed var(--dark-color);
+      border-radius: 1rem ;
+      -webkit-border-radius: 1rem ;
+      -moz-border-radius: 1rem ;
+      -ms-border-radius: 1rem ;
+      -o-border-radius: 1rem ;
+}
+  
+    & .grid{
+      color: var(--helper-color);
+  
+      & .div1{
+        & p, h2{
+          text-align: center;
+          text-transform: capitalize;
+        }
+        border-right: 0.2rem solid var(--dark-color);
+  
+        &:last-child{
+          border: none;
+        }
+  
+        & h2{
+          font-size: 4.8rem;
+        }
+      }
+    }
+  }
+  

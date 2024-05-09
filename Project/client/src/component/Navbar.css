@@ -1,0 +1,72 @@
+.container{
+    max-width: 140rem;
+    padding: 4.2rem 2.4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-brand a{
+  font-size: 3.8rem;
+  font-weight: 600;
+  color: var(--nav-color);
+  /*-webkit-text-stroke: 1px black;*/
+  animation: logoani 1s linear infinite;
+  -webkit-animation: logoani 1s linear infinite;
+}
+@keyframes logoani {
+  0% {
+    text-shadow: -2px 2px 4px var(--helper-color); 
+  }
+  50% {
+    text-shadow: -2px 2px 5px var(--dark-color);
+  }
+  100% {
+    text-shadow: -2px 2px 4px var(--btn-color); 
+  }
+}
+
+ul{
+    display: flex;
+    gap: 3.5rem;
+    &.admin{
+      display: flex;
+      flex-direction: column;
+    }
+}
+
+li{
+  list-style: none;
+}
+
+li a{
+  text-transform: capitalize; 
+  font-weight: 900;
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+  color: var(--nav-color);
+  text-decoration: inherit;
+  position: relative;
+
+  &::after{
+    content: "";
+    position: absolute;
+    bottom: -0.3rem;
+    left: 0;
+    width: 0%;
+    border-bottom: 0.4rem solid var(--helper-color);
+    
+    transition: all 0.3s linear;
+  }
+
+  &:hover::after{
+    width: 110%;
+  }
+
+  &:hover{
+    color: var(--helper-color);
+  }
+
+  &.active{
+    color: var(--dark-color);
+  }
+}
