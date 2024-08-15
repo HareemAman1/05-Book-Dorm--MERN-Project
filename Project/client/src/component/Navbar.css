@@ -13,6 +13,7 @@
   animation: logoani 1s linear infinite;
   -webkit-animation: logoani 1s linear infinite;
 }
+
 @keyframes logoani {
   0% {
     text-shadow: -2px 2px 4px var(--helper-color); 
